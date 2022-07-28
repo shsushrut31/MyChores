@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		A65EA8B828928B620050741A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EA8B728928B620050741A /* AppDelegate.swift */; };
 		A65EA8BA28928B620050741A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EA8B928928B620050741A /* SceneDelegate.swift */; };
-		A65EA8BC28928B620050741A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EA8BB28928B620050741A /* ViewController.swift */; };
+		A65EA8BC28928B620050741A /* ChoresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EA8BB28928B620050741A /* ChoresController.swift */; };
 		A65EA8BF28928B620050741A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65EA8BD28928B620050741A /* Main.storyboard */; };
 		A65EA8C228928B620050741A /* MyChores.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A65EA8C028928B620050741A /* MyChores.xcdatamodeld */; };
 		A65EA8C428928B650050741A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65EA8C328928B650050741A /* Assets.xcassets */; };
 		A65EA8C728928B650050741A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65EA8C528928B650050741A /* LaunchScreen.storyboard */; };
+		A65EA8CF2892A0D90050741A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EA8CE2892A0D80050741A /* BaseViewController.swift */; };
+		A65EA8D12892A9180050741A /* ChoresTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EA8D02892A9180050741A /* ChoresTableCell.swift */; };
+		A65EA8D32892AAC50050741A /* AddChoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EA8D22892AAC50050741A /* AddChoreController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A65EA8B428928B620050741A /* MyChores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65EA8B728928B620050741A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A65EA8B928928B620050741A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A65EA8BB28928B620050741A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A65EA8BB28928B620050741A /* ChoresController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresController.swift; sourceTree = "<group>"; };
 		A65EA8BE28928B620050741A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A65EA8C128928B620050741A /* MyChores.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyChores.xcdatamodel; sourceTree = "<group>"; };
 		A65EA8C328928B650050741A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A65EA8C628928B650050741A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A65EA8C828928B650050741A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A65EA8CE2892A0D80050741A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A65EA8D02892A9180050741A /* ChoresTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresTableCell.swift; sourceTree = "<group>"; };
+		A65EA8D22892AAC50050741A /* AddChoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChoreController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,15 @@
 			children = (
 				A65EA8B728928B620050741A /* AppDelegate.swift */,
 				A65EA8B928928B620050741A /* SceneDelegate.swift */,
-				A65EA8BB28928B620050741A /* ViewController.swift */,
+				A65EA8CE2892A0D80050741A /* BaseViewController.swift */,
+				A65EA8BB28928B620050741A /* ChoresController.swift */,
+				A65EA8D02892A9180050741A /* ChoresTableCell.swift */,
 				A65EA8BD28928B620050741A /* Main.storyboard */,
 				A65EA8C328928B650050741A /* Assets.xcassets */,
 				A65EA8C528928B650050741A /* LaunchScreen.storyboard */,
 				A65EA8C828928B650050741A /* Info.plist */,
 				A65EA8C028928B620050741A /* MyChores.xcdatamodeld */,
+				A65EA8D22892AAC50050741A /* AddChoreController.swift */,
 			);
 			path = MyChores;
 			sourceTree = "<group>";
@@ -141,9 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A65EA8BC28928B620050741A /* ViewController.swift in Sources */,
+				A65EA8CF2892A0D90050741A /* BaseViewController.swift in Sources */,
+				A65EA8BC28928B620050741A /* ChoresController.swift in Sources */,
+				A65EA8D32892AAC50050741A /* AddChoreController.swift in Sources */,
 				A65EA8B828928B620050741A /* AppDelegate.swift in Sources */,
 				A65EA8BA28928B620050741A /* SceneDelegate.swift in Sources */,
+				A65EA8D12892A9180050741A /* ChoresTableCell.swift in Sources */,
 				A65EA8C228928B620050741A /* MyChores.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
